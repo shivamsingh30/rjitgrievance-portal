@@ -2,7 +2,7 @@ const mongoose=require('mongoose')
  
 
  const connectdb=()=>{
-    return mongoose.connect('mongodb://127.0.0.1:27017/grievanceportal')
+    return mongoose.connect('mongodb://127.0.0.1:27017/grievancerjitportal')
     .then(()=>{
         console.log('connection succesfully')
     }).catch((error)=>{
