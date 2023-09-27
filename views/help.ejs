@@ -71,7 +71,8 @@
                             <img src="image/2.png" alt="">
                             <p style="color:brown;font-size: 20px;font-family: cursive;" class="text-center">Student can
                                 manage or view Their <br>Grievance Here..</p>
-                            <button class="btn btn-info text-white"><a href="student.html" class="te">Log In</a></button>
+                                <button class="btn btn-info text-white" data-bs-toggle="modal"
+                                data-bs-target="#studentmodal">login</button>
                         </div>
                     </div>
                     <div class="col-md-4 card1">
@@ -79,7 +80,8 @@
                             <img src="/image/p.png" alt="">
                             <p style="color:greenyellow;font-size: 20px;font-family: cursive;" class="text-center">This
                                 Section is Managed By the Dean/Principal of RJIT Principal</p>
-                            <button class="btn btn-info text-white"><a href="principal.html" class="te">Log In</a></button>
+                                <button class="btn btn-info text-white" data-bs-toggle="modal"
+                                data-bs-target="#deanmodal">login</button>
                         </div>
                     </div>
                     
@@ -89,7 +91,8 @@
                             <img src="image/a.jpg" alt="">
                             <p style="color:rgb(243, 238, 235);font-size: 20px;padding: auto;font-family: cursive;"
                                 class="text-center">This Section is managed and view by the Grievance handler. </p>
-                            <button class="btn btn-info text-white"><a href="admin.html" class="te">Log In</a></button>
+                                <button class="btn btn-info text-white" data-bs-toggle="modal"
+                                data-bs-target="#adminmodal">login</button>
                         </div>
                     
                     </div>
@@ -113,5 +116,152 @@
         <div class="container-fluid mt-5">
             <img src="/image/1.jpg" alt="" class="w-100">
         </div>
+
+
+                   <!-- modal default starts -->
+                   <div class="modal fade" id="studentmodal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">student Login</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    
+            
+    
+                        </div>
+                        <div class="modal-body">
+    
+                           
+                          <form action="/verifylogin" method="post">
+                            
+                              
+                              <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="email" class="form-control" name="email" required>
+                                </div>
+                              
+                                <div class="form-group">
+                                  <label for="">Password</label>
+                                  <input type="password" class="form-control" name="password" required>
+                                  </div>
+                                  
+                                    <button class="btn btn-success mt-3" type="submit">Submit</button>
+                                        
+                          </form>
+                        </div>
+                       
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                  </div>
+                  <!-- /.modal -->
+    
+                    <!-- modal default starts -->
+                <div class="modal fade" id="deanmodal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Dean Login</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    
+                        </div>
+                        <div class="modal-body">
+                          <form action="/adminverifylogin" method="post">
+                            
+                              
+                              <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="email" class="form-control" name="email" required>
+                                </div>
+                              
+                                <div class="form-group">
+                                  <label for="">Password</label>
+                                  <input type="password" class="form-control" name="password" required>
+                                  </div>
+                                  
+                                    <button class="btn btn-success mt-3" type="submit">Submit</button>
+                                        
+                          </form>
+                        </div>
+                       
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                  </div>
+                  <!-- /.modal -->
+    
+                    <!-- modal default starts -->
+                <div class="modal fade" id="adminmodal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Admin Login</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    
+                        </div>
+                        <div class="modal-body">
+                          <form action="/adminverifylogin" method="post">
+                            
+                              
+                              <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="email" class="form-control" name="email" required>
+                                </div>
+                              
+                                <div class="form-group">
+                                  <label for="">Password</label>
+                                  <input type="password" class="form-control" name="password" required>
+                                  </div>
+                                  
+                                    <button class="btn btn-success mt-3" type="submit">Submit</button>
+                                        
+                          </form>
+                        </div>
+                       
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                  </div>
+                  <!-- /.modal -->
+    
+    
+       <!-- modal default starts -->
+       <div class="modal fade" id="aa">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title"> Login</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    
+            </div>
+            <div class="modal-body">
+              <form action="/verifylogin" method="post">
+                
+                  
+                  <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="email" class="form-control" name="email" required>
+                    </div>
+                  
+                    <div class="form-group">
+                      <label for="">Password</label>
+                      <input type="password" class="form-control" name="password" required>
+                      </div>
+                      
+                        <button class="btn btn-success mt-3" type="submit">Submit</button>
+                            
+              </form>
+            </div>
+           
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+
 
 <%- include('./footer.ejs')  %>
