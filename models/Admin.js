@@ -1,6 +1,6 @@
 const mongoose=require('mongoose')
 
-//define schema
+//define schema on modal
 
 const AdminSchema=new mongoose.Schema({
 
